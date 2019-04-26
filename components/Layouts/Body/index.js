@@ -6,7 +6,7 @@ function Body() {
 
 Body.prototype.getBodyTag = function(js) {
 	this.js = js;
-	let header = Header.getHeader('Hackaday - By Hearsh Mahidharia');
+	let header = Header.getHeader('Hackaway - By O(no)');
 	return `<body>${header}
 	<script type="application/javascript" src="${this.js}"></script>
 	</body>`;
