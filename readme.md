@@ -75,3 +75,30 @@ Manages all the data for `/`, `/projects/:id`, `/getRecommendation`, `/getPage`.
 
 #### Users
 Manages the user data for `/users`. Fetches the user data and sends it back as a `json` response back to the client.
+
+## Challenges
+
+**1. Server Side Rendering** - Complexity of SSR grows with complexity of application. 
+
+**2. Quick Data access** 
+
+**3. Improve page performance** 
+
+**4. API Restrictions**- We scanned through a lot of API’s where we could have the tags to find the users however due to the restrictions we were not in a position to implement that 
+  
+## Future work:
+
+**GitLogin** - We deemed the O authorization as surplus as it imposed limitations on the recommender system. Building a recommender system was much easier when we had the user data. We wanted to create a recommender system that went beyond the data and analyzed user behavior each time in enters the system. This could be easily understood with Google which provides recommendation based on the users browsing history and Duckduckgo which provides recommendations without the history. We could definitely work on getting Gitlogin and adding additional layer of security after we have a concrete recommender system
+
+MongoDB: We would be also working on transferring the API data from Hackaday to a Mongodb data instance. 
+
+
+## Conclusion
+
+Technologies learnt:
+
+- **Node JS** - To easily build fast and scalable network applications. 
+- **MongoDB** - Database that works fast and integrates well with Node JS 
+- **Vanilla JS** - Most lightweight framework available anywhere 
+- **SASS** - Powerful professional grade CSS extension language 
+- **Express with EJS** (Embedded javascript)
