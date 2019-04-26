@@ -1,0 +1,240 @@
+body
+  margin: 0px
+  max-width: 100%
+
+Card
+	display: flex
+	border-radius: 5px
+	border: 1px solid #ebebeb
+	width: 100%
+	margin: 10px auto
+
+h1
+  margin: 10px 0px
+
+h3
+  margin: 5px 0px
+
+ul
+  margin: 5px 0px
+
+.img-div
+	width: 200px
+	height: 200px
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center
+
+img
+	width: 100%
+
+.text-div
+	padding: 0 10px
+	width: -webkit-fill-available
+
+.text-div > p
+  margin: 0px
+
+a
+  text-decoration: none
+  color: #439aa5
+
+button:disabled, button[disabled]
+  border: 1px solid #999999
+  background-color: #cccccc
+  color: #666666
+
+/*tooltip Box*/
+
+.con-tooltip
+  position: relative
+  border-radius: 9px
+  display: inline-block
+  transition: all 0.3s ease-in-out
+  cursor: default
+  width: 100%
+
+/*tooltip*/
+
+.tooltip
+  visibility: hidden
+  z-index: 1
+  opacity: .40
+  width: 100%
+  padding: 0px 20px
+  background: #333
+  color: #fff
+  position: absolute
+  top: -270%
+  left: -25%
+  border-radius: 9px
+  font-size: 16px
+  transform: translateY(9px)
+  transition: all 0.3s ease-in-out
+  box-shadow: 0 0 3px rgba(56, 54, 54, 0.86)
+  display: flex
+  min-height: 100px
+  &::after
+    content: " "
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 12px 12.5px 0 12.5px
+    border-color: #333 transparent transparent transparent
+    position: absolute
+    left: 40%
+    bottom: -10px
+
+/* tooltip  after*/
+.user-name
+	display: inline-block
+	padding: 10px 0px
+	margin: 0px
+
+.user-name:hover~.tooltip
+  visibility: visible
+  opacity: 1
+  animation: anim 1s ease-in-out infinite  alternate
+
+@keyframes anim
+  0%
+    transform: translateY(6px)
+
+  100%
+    transform: translateY(1px)
+
+.tooltip-img > img
+	width: 100px
+	margin-right: 10px
+  max-height: 100px
+
+.tooltip-txt
+  padding-top: 10px
+
+.tooltip-txt > p
+	margin: 0px
+
+.loader
+  display: inline-block
+  text-align: center
+  width: 100%
+  padding-top: 15vh
+
+.lds-dual-ring 
+  display: inline-block
+  width: 64px
+  height: 64px
+  margin: auto
+
+.lds-dual-ring:after 
+  content: " "
+  display: block
+  width: 46px
+  height: 46px
+  margin: 1px
+  border-radius: 50%
+  border: 5px solid #222
+  border-color: #222 transparent #222 transparent
+  animation: lds-dual-ring 1.2s linear infinite
+
+@keyframes lds-dual-ring
+  0%
+    transform: rotate(0deg)
+  
+  100% 
+    transform: rotate(360deg)
+
+.arrows
+	width: 100%
+	text-align: center
+	display: inline-block
+
+.btn
+  width: 85px
+  margin: 5px
+  padding: 5px
+  font-size: 14px
+  font-size: 1.4rem
+  text-align: center
+  color: #000
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c19f54), to(#a6853c))
+  background-image: linear-gradient(-180deg, #c19f54 0%, #a6853c 100%)
+  background-repeat: round
+  border: 1px solid #c19f54
+  border-radius: 2px
+  opacity: 1
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)"
+  filter: alpha(opacity=100)
+  -webkit-transition: all .2s ease-in
+  transition: all .2s ease-in
+  cursor: pointer
+  display: inline-block
+
+.btn:hover
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#c8aa67), to(#b99443))
+  background-image: linear-gradient(-180deg, #c8aa67 0%, #b99443 100%)
+  border-color: #c8aa67
+  color: #000
+
+.read-more
+  width:auto !important
+
+.content
+  width: 80%
+  margin: 20px auto
+  display: flex
+  align-items: flex-start
+  align-content: flex-start
+
+.project-heading
+  text-align: center
+  text-decoration: none
+
+.single-project
+  text-align: center
+  padding: 20px
+  border-radius: 5px
+  border: 1px solid #ebebeb
+  width: 100%
+  display: block
+
+.single-project > img
+  max-height: 400px
+  max-width: 100%
+  width: auto
+  margin: auto
+
+header
+  display: inline-block
+  background-color: #222
+  padding: 10px 0px
+  width: 100%
+  text-align: center
+  box-shadow: 0px 1px 5px 0px #888888
+  margin-bottom: 20px
+
+header > h1
+  font-size: 2rem
+  color: #fff
+  margin: 0px
+
+.recommender
+  width: 30%
+  margin: 5px 20px
+  box-shadow: 0px 1px 5px 0px #888888
+  background-color: #222
+  color: #fff
+  text-align: center
+  border-radius: 5px
+  -webkit-transition: all .50s ease-in-out
+  -moz-transition: all .50s ease-in-out
+  -o-transition: all .50s ease-in-out
+  transition: all .50s ease-in-out
+
+project
+  width: 70%
+  align-self: stretch
+
+
+
+
