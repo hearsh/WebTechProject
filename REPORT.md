@@ -30,17 +30,10 @@ The primary objective as a unit was to create an intuitive web app where the use
 ..* Server-side renders a page that would show projects metadata on clicking the project
 ..* Show recommended projects and recommended users by comparing the selected project tags with other tags and users
 
+
 ## Requirements
 * [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/en/)
 * [NodeJs](https://nodejs.org/en/)
-
-## Technologies & Languages Used
-* NodeJS
-* Git
-* SASS
-* Vanilla Javascript
-* Express
-* EJS
 
 ## How to Run the Application?
 * Clone or download the project
@@ -53,6 +46,7 @@ The primary objective as a unit was to create an intuitive web app where the use
 * Type `yarn start` or `npm start`
 * Go to `localhost:3000`
 * Enjoy browsing and hack away.
+
 
 ## Team Member
 Teamwork is more of  “WE” and less of  “ME”.  We believe that we worked well as a team and thought of adding our contributions at the very end as everyone tried helping and fixing the bugs that were encountered during the development phase. 
@@ -69,7 +63,7 @@ Karan: App.js along with layout and positioning of elements
 Our outline describes the entire structure of the application along with various aspects. The functions and helper functions are briefly described on the lines of the usage. The initial app. Js is an express file which is used for specifying the routes. In simpler words it's a settings file for the project with configurations.
 
 ### View
-This consists of index.js which displays one variable app which is sent using EJS (embedded javascript) and error. Js which displays a 404 page load error when a user fails to connect to a page.
+This consists of index.js which displays one variable app which is sent using EJS (embedded javascript) and error. Js which displays a 404 page load error when a user fails to connect to a page. 
 
 ### Components
 
@@ -143,3 +137,4 @@ Technologies learnt:
 - **Vanilla JS** - Most lightweight framework available anywhere 
 - **SASS** - Powerful professional grade CSS extension language 
 - **Express with EJS** (Embedded javascript)
+- **Git**
