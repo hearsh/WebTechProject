@@ -1,4 +1,4 @@
-# hackadayApi
+# hackaway by O(no)
 
 ## Introduction
 This project provides a view for [hackaday.io](https://hackaday.io) projects and their users. The projects makes use of server side rendering without using ReactJs. Implemented caching inorder to navigate through pages faster.
@@ -12,6 +12,23 @@ It also provides the user with recommendations about projects and users, Recomme
 Used a singleton architecture for the project.
 
 Created my own component system to facilitate server side rendering. All operations happen on the server, only dynamic content is generated on the front end.
+
+## Objective
+The primary objective as a unit was to create an intuitive web app where the users could have a look at the project information by either hovering to the selected project or by opening a new project page. We also built a recommender system which would offer unique recommendations to the users and guide them in the process of their selection. We have challenged ourselves as a team and we strived to make something substantial and hence we went ahead with our objective of creating an intuitive API. The objectives can be broken down into:
+
+* Project List page:
+..* Rendering a page that shows a list of projects
+..* The page is rendered on the server side and displays each projects metadata and owner
+..* Show a tooltip presenting the owners metadata when hovering over a project owners name
+..* The tooltip should be loaded dynamically and only once per browsing session
+* Implement Pagination:
+..* Pages should not load when going to the next/previous pages
+..* The browser will display an unique URL when going to next/previous pages
+..* The URL should load the same page of projects as if the visitor navigated using the next/previous links
+..* Asynchronous caching for redirecting to next or previous page 
+* Project detail page:
+..* Server-side renders a page that would show projects metadata on clicking the project
+..* Show recommended projects and recommended users by comparing the selected project tags with other tags and users
 
 ## Requirements
 * [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/en/)
@@ -37,7 +54,22 @@ Created my own component system to facilitate server side rendering. All operati
 * Go to `localhost:3000`
 * Enjoy browsing and hack away.
 
-## Detailed Description On The Project
+## Team Member
+Teamwork is more of  “WE” and less of  “ME”.  We believe that we worked well as a team and thought of adding our contributions at the very end as everyone tried helping and fixing the bugs that were encountered during the development phase. 
+
+Backend: 
+Hearsh: Data Access (Min-Heap, Recommender), Layouts
+Ishan: Data Access (User Data, Project Data), Layouts
+
+Front end: 
+Sohini: App.js and SASS
+Karan: App.js along with layout and positioning of elements
+
+## Technical Architecture
+Our outline describes the entire structure of the application along with various aspects. The functions and helper functions are briefly described on the lines of the usage. The initial app. Js is an express file which is used for specifying the routes. In simpler words it's a settings file for the project with configurations.
+
+### View
+This consists of index.js which displays one variable app which is sent using EJS (embedded javascript) and error. Js which displays a 404 page load error when a user fails to connect to a page.
 
 ### Components
 
@@ -48,7 +80,7 @@ Stores the api key for hackaday.io
 Has helper functions to maintain the data of the project. Each of these functions have their own state of data which they maintain
 
 ##### MinHeap
-It is used to maintain a min heap to store the top three project tags and user tags. The tags have a score attached to them which is calculted using probability.
+It is used to maintain a min heap to store the top three project tags and user tags. The tags have a score attached to them which is calculted using probability. We opted for the top 3 as we aimed for faster loading times. 
 
 ##### ProjectData
 It has helper functions to get project data. Used to get a page of projects and also single projects.
@@ -68,6 +100,15 @@ Contains all the styling for the project.
 ### Public
 Contains the javascript files for dynamic content loading. Loads the user data dn tooltips dynamically after the page loads. It also changes the pages dynamically using hash routes. Generates recommendations dynamically to.
 
+#### App.js
+We have created a function GenerateTolTip which sends a fetch request to the user route to retrieve all the user information. It will generate a tooltip for each user on the page. 
+`getRecommendation` is a asynchronous function to get recommendations on hitting the index/getRecommendation route on putting getRequest which is generated dynamically.
+`CreateLoadingScreen` This comprises of following functions.
+`getURL` gives the hash route of the page and will fetch the page according to the hash mentioned (e.g. #).
+`change` This function fires up the URL and dynamically updates the host locations.
+`GenerateToltip` It generates the toltip and fires other functions. It also ensures that it checks for the host location every time a file is loaded.
+`Cleardiv` clears any div that is being sent to the tags whereas the setcache makes the cache available or unavailable.
+
 ### Routes
 
 #### Index
@@ -84,7 +125,7 @@ Manages the user data for `/users`. Fetches the user data and sends it back as a
 
 **3. Improve page performance** 
 
-**4. API Restrictions**- We scanned through a lot of API’s where we could have the tags to find the users however due to the restrictions we were not in a position to implement that 
+**4. API Restrictions** - We scanned through a lot of API’s where we could have the tags to find the users however due to the restrictions we were not in a position to implement that 
   
 ## Future work:
 
