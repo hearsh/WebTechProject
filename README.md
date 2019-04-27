@@ -17,18 +17,18 @@ Created my own component system to facilitate server side rendering. All operati
 The primary objective as a unit was to create an intuitive web app where the users could have a look at the project information by either hovering to the selected project or by opening a new project page. We also built a recommender system which would offer unique recommendations to the users and guide them in the process of their selection. We have challenged ourselves as a team and we strived to make something substantial and hence we went ahead with our objective of creating an intuitive API. The objectives can be broken down into:
 
 * Project List page:
-..* Rendering a page that shows a list of projects
-..* The page is rendered on the server side and displays each projects metadata and owner
-..* Show a tooltip presenting the owners metadata when hovering over a project owners name
-..* The tooltip should be loaded dynamically and only once per browsing session
+*.. Rendering a page that shows a list of projects
+*.. The page is rendered on the server side and displays each projects metadata and owner
+*.. Show a tooltip presenting the owners metadata when hovering over a project owners name
+*.. The tooltip should be loaded dynamically and only once per browsing session
 * Implement Pagination:
-..* Pages should not load when going to the next/previous pages
-..* The browser will display an unique URL when going to next/previous pages
-..* The URL should load the same page of projects as if the visitor navigated using the next/previous links
-..* Asynchronous caching for redirecting to next or previous page 
+*.. Pages should not load when going to the next/previous pages
+*.. The browser will display an unique URL when going to next/previous pages
+*.. The URL should load the same page of projects as if the visitor navigated using the next/previous links
+*.. Asynchronous caching for redirecting to next or previous page 
 * Project detail page:
-..* Server-side renders a page that would show projects metadata on clicking the project
-..* Show recommended projects and recommended users by comparing the selected project tags with other tags and users
+*.. Server-side renders a page that would show projects metadata on clicking the project
+*.. Show recommended projects and recommended users by comparing the selected project tags with other tags and users.
 
 
 ## Requirements
@@ -52,12 +52,12 @@ The primary objective as a unit was to create an intuitive web app where the use
 Teamwork is more of  “WE” and less of  “ME”.  We believe that we worked well as a team and thought of adding our contributions at the very end as everyone tried helping and fixing the bugs that were encountered during the development phase. 
 
 Backend: 
-Hearsh: Data Access (Min-Heap, Recommender), Layouts
-Ishan: Data Access (User Data, Project Data), Layouts
+* Hearsh: Data Access (Min-Heap, Recommender), Layouts
+* Ishan: Data Access (User Data, Project Data), Layouts
 
 Front end: 
-Sohini: App.js and SASS
-Karan: App.js along with layout and positioning of elements
+* Sohini: App.js and SASS
+* Karan: App.js along with layout and positioning of elements
 
 ## Technical Architecture
 Our outline describes the entire structure of the application along with various aspects. The functions and helper functions are briefly described on the lines of the usage. The initial app. Js is an express file which is used for specifying the routes. In simpler words it's a settings file for the project with configurations.
