@@ -13,7 +13,9 @@ Used a singleton architecture for the project.
 
 Created my own component system to facilitate server side rendering. All operations happen on the server, only dynamic content is generated on the front end.
 
-[Check out the demo]()
+[Check out the demo](https://mywebtechproject.herokuapp.com/)
+
+[Our Presentation](https://github.com/hearsh/WebTechProject/blob/master/Misc/Web%20Tech.pptx)
 
 ## Objective
 The primary objective as a unit was to create an intuitive web app where the users could have a look at the project information by either hovering to the selected project or by opening a new project page. We also built a recommender system which would offer unique recommendations to the users and guide them in the process of their selection. We have challenged ourselves as a team and we strived to make something substantial and hence we went ahead with our objective of creating an intuitive API. The objectives can be broken down into:
@@ -66,7 +68,7 @@ Front end:
 ## Technical Architecture
 Our outline describes the entire structure of the application along with various aspects. The functions and helper functions are briefly described on the lines of the usage. The initial app. Js is an express file which is used for specifying the routes. In simpler words it's a settings file for the project with configurations.
 
-![Technical Architecture](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![Technical Architecture](https://github.com/hearsh/WebTechProject/blob/master/Misc/Technical%20Architecture.png)
 
 
 ### View
