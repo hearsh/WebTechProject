@@ -55,11 +55,13 @@ The primary objective as a unit was to create an intuitive web app where the use
 Teamwork is more of  “WE” and less of  “ME”.  We believe that we worked well as a team and thought of adding our contributions at the very end as everyone tried helping and fixing the bugs that were encountered during the development phase. 
 
 **Backend:**
+
 Hearsh: Data Access (Min-Heap, Recommender), Layouts
 
 Ishan: Data Access (User Data, Project Data), Layouts
 
 **Front end:**
+
 Sohini: App.js and SASS
 
 Karan: App.js along with layout and positioning of elements
