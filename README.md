@@ -1,7 +1,7 @@
 # hackaway by O(no)
 
 ## Introduction
-This project provides a view for [hackaday.io](https://hackaday.io) projects and their users. The projects makes use of server side rendering without using ReactJs. Implemented caching inorder to navigate through pages faster.
+This project provides a view for [hackaday.io](https://hackaday.io) projects and their users. The projects makes use of server side rendering without using ReactJs. Implemented caching inorder to navigate through pages faster.The project has been hosted on Heroku which is a leading cloud application platform.
 
 Provides 10 projects per page, has a read more on each projects if anyone wants to know more about the project. 
 
