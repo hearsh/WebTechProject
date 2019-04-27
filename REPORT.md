@@ -56,10 +56,12 @@ Teamwork is more of  “WE” and less of  “ME”.  We believe that we work
 
 **Backend:**
 Hearsh: Data Access (Min-Heap, Recommender), Layouts
+
 Ishan: Data Access (User Data, Project Data), Layouts
 
 **Front end:**
 Sohini: App.js and SASS
+
 Karan: App.js along with layout and positioning of elements
 
 ## Detailed Description On The Project
