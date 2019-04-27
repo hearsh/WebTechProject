@@ -16,19 +16,21 @@ Created my own component system to facilitate server side rendering. All operati
 ## Objective
 The primary objective as a unit was to create an intuitive web app where the users could have a look at the project information by either hovering to the selected project or by opening a new project page. We also built a recommender system which would offer unique recommendations to the users and guide them in the process of their selection. We have challenged ourselves as a team and we strived to make something substantial and hence we went ahead with our objective of creating an intuitive API. The objectives can be broken down into:
 
-* Project List page:
-*.. Rendering a page that shows a list of projects
-*.. The page is rendered on the server side and displays each projects metadata and owner
-*.. Show a tooltip presenting the owners metadata when hovering over a project owners name
-*.. The tooltip should be loaded dynamically and only once per browsing session
-* Implement Pagination:
-*.. Pages should not load when going to the next/previous pages
-*.. The browser will display an unique URL when going to next/previous pages
-*.. The URL should load the same page of projects as if the visitor navigated using the next/previous links
-*.. Asynchronous caching for redirecting to next or previous page 
-* Project detail page:
-*.. Server-side renders a page that would show projects metadata on clicking the project
-*.. Show recommended projects and recommended users by comparing the selected project tags with other tags and users.
+### Project List page:
+* Rendering a page that shows a list of projects
+* The page is rendered on the server side and displays each projects metadata and owner
+* Show a tooltip presenting the owners metadata when hovering over a project owners name
+* The tooltip should be loaded dynamically and only once per browsing session
+
+### Implement Pagination:
+* Pages should not load when going to the next/previous pages
+* The browser will display an unique URL when going to next/previous pages
+* The URL should load the same page of projects as if the visitor navigated using the next/previous links
+* Asynchronous caching for redirecting to next or previous page 
+
+### Project detail page:
+* Server-side renders a page that would show projects metadata on clicking the project
+* Show recommended projects and recommended users by comparing the selected project tags with other tags and users.
 
 
 ## Requirements
